@@ -1,0 +1,1 @@
+import{t as e}from"./createLucideIcon-8Ey04gF9.js";var t=e(`arrow-right`,[[`path`,{d:`M5 12h14`,key:`1ays0h`}],[`path`,{d:`m12 5 7 7-7 7`,key:`xquz4c`}]]),n=e(`git-commit-horizontal`,[[`circle`,{cx:`12`,cy:`12`,r:`3`,key:`1v7zrd`}],[`line`,{x1:`3`,x2:`9`,y1:`12`,y2:`12`,key:`1dyftd`}],[`line`,{x1:`15`,x2:`21`,y1:`12`,y2:`12`,key:`oup4p8`}]]);export{t as n,n as t};

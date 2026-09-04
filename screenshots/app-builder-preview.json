@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "HodgeForm",
+      "hasCanvas": false,
+      "bodyTextLen": 1031,
+      "bodyTextHash": "cbfe692f9294d95fea9bc669fefea42370121ff531eec482507757d9732df37d",
+      "bodyTextPrefix": "HodgeForm TRUST COMPILER Verify a receipt Sign in RELEASE AUTHOR",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "HodgeForm",
+      "hasCanvas": false,
+      "bodyTextLen": 1014,
+      "bodyTextHash": "b5b6d6baf820efdfa5aa749c97f21fc8d037d69c1a1a672186ce4b13e1842f1c",
+      "bodyTextPrefix": "HodgeForm TRUST COMPILER Sign in RELEASE AUTHORITY FOR AI When a",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

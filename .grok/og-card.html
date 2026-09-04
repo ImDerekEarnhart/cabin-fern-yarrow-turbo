@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HodgeForm OG</title>
+  <style>
+    @font-face {
+      font-family: "IBM Plex Sans";
+      src: url("og-fonts/plex-sans-400.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "IBM Plex Sans";
+      src: url("og-fonts/plex-sans-500.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "IBM Plex Sans";
+      src: url("og-fonts/plex-sans-600.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "IBM Plex Mono";
+      src: url("og-fonts/plex-mono-400.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "IBM Plex Mono";
+      src: url("og-fonts/plex-mono-500.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: block;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #090b0d;
+      color: #f2f0eb;
+      font-family: "IBM Plex Sans", "Liberation Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background:
+        linear-gradient(180deg, rgba(9, 11, 13, 0.42) 0%, rgba(9, 11, 13, 0.28) 38%, rgba(9, 11, 13, 0.55) 100%),
+        url("panel.jpg") center / cover no-repeat,
+        #090b0d;
+    }
+
+    .stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(242, 240, 235, 0.045) 1px, transparent 0);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+
+    .frame {
+      position: absolute;
+      inset: 36px;
+      border: 1px solid rgba(157, 184, 201, 0.55);
+    }
+
+    .frame-inner {
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(157, 184, 201, 0.18);
+    }
+
+    .tick {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-color: #9db8c9;
+      border-style: solid;
+    }
+    .tick.tl { top: -1px; left: -1px; border-width: 1.5px 0 0 1.5px; }
+    .tick.tr { top: -1px; right: -1px; border-width: 1.5px 1.5px 0 0; }
+    .tick.bl { bottom: -1px; left: -1px; border-width: 0 0 1.5px 1.5px; }
+    .tick.br { bottom: -1px; right: -1px; border-width: 0 1.5px 1.5px 0; }
+
+    .rail {
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "IBM Plex Mono", "Liberation Mono", monospace;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      color: #9db8c9;
+      text-transform: uppercase;
+    }
+    .rail.top { top: 22px; }
+    .rail.bottom { bottom: 22px; }
+
+    .rail .dim { color: rgba(157, 184, 201, 0.55); letter-spacing: 0.08em; text-transform: none; }
+
+    .lockup {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -52%);
+      width: 760px;
+      text-align: center;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      margin: 0 auto 22px;
+      display: block;
+    }
+
+    .kicker {
+      font-family: "IBM Plex Mono", "Liberation Mono", monospace;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      color: #9db8c9;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .title {
+      font-size: 92px;
+      font-weight: 500;
+      letter-spacing: 0.045em;
+      line-height: 1;
+      color: #f2f0eb;
+    }
+
+    .rule {
+      width: 120px;
+      height: 1px;
+      margin: 26px auto 22px;
+      background: #9db8c9;
+      opacity: 0.85;
+    }
+
+    .tagline {
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #f2f0eb;
+      opacity: 0.92;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="frame">
+      <span class="tick tl"></span>
+      <span class="tick tr"></span>
+      <span class="tick bl"></span>
+      <span class="tick br"></span>
+      <div class="frame-inner"></div>
+
+      <div class="rail top">
+        <span>HF-GATE · TRUST COMPILER</span>
+        <span class="dim">sha256:27c5e88280cd7c2a…4fc0454d</span>
+      </div>
+
+      <div class="lockup">
+        <svg class="mark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="16" height="16" rx="3" fill="#090b0d"/>
+          <rect x="2" y="2" width="12" height="12" rx="1" fill="none" stroke="#9db8c9" stroke-width="1"/>
+          <path fill="#f2f0eb" d="M5 4h2v8H5zM9 4h2v8H9zM5 7h6v2H5z"/>
+        </svg>
+        <div class="kicker">Release authority</div>
+        <div class="title">HodgeForm</div>
+        <div class="rule"></div>
+        <div class="tagline">Models propose. Policy decides.</div>
+      </div>
+
+      <div class="rail bottom">
+        <span class="dim">artifact/exact-bytes</span>
+        <span>policy/frozen</span>
+        <span class="dim">evidence/admitted</span>
+        <span>receipt/RELEASE</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

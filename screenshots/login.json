@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/login",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "HodgeForm",
+      "hasCanvas": false,
+      "bodyTextLen": 220,
+      "bodyTextHash": "79bd89e0840c59f3b18e355979a423309f2d17c5a4f4efe5822bab0f58c7e3c9",
+      "bodyTextPrefix": "HodgeForm RELEASE AUTHORITY Sign in to the gate Release decision",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/login.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "HodgeForm",
+      "hasCanvas": false,
+      "bodyTextLen": 220,
+      "bodyTextHash": "79bd89e0840c59f3b18e355979a423309f2d17c5a4f4efe5822bab0f58c7e3c9",
+      "bodyTextPrefix": "HodgeForm RELEASE AUTHORITY Sign in to the gate Release decision",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/login-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/login.json"
+}
